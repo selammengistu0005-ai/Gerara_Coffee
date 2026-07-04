@@ -1,6 +1,3 @@
-// ==========================================================================
-// 1. Professional Branded Preloader Logic
-// ==========================================================================
 (function() {
     const preloader = document.getElementById('preloader');
     let isLoaded = false;
@@ -8,29 +5,18 @@
     function hidePreloader() {
         if (!isLoaded && preloader) {
             isLoaded = true;
-            // Triggers the CSS transition fade out
             preloader.classList.add('fade-out');
-            
-            // Completely removes it from the DOM layout once the transition ends
             setTimeout(() => {
                 preloader.remove();
             }, 500);
         }
     }
 
-    // Safety Net: Force reveal the website after 4 seconds if images hang up
     setTimeout(hidePreloader, 4000);
-
-    // Dynamic Trigger: Hide immediately when all assets and images fully arrive
     window.addEventListener('load', hidePreloader);
 })();
 
-// ==========================================================================
-// 2. Core Interactive Functions (Runs when DOM elements are ready)
-// ==========================================================================
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // --- Sticky Navbar Effect ---
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -40,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- Mobile Navigation Menu Toggle ---
     const menuBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
     const navItems = document.querySelectorAll('.nav-links a');
@@ -50,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
             navLinks.classList.toggle('active');
             menuBtn.classList.toggle('active');
             
-            // Seamlessly swap out FontAwesome icons based on visibility state
             const icon = menuBtn.querySelector('i');
             if (navLinks.classList.contains('active')) {
                 icon.classList.remove('fa-bars');
@@ -61,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Autoclose mobile side menu panel upon picking a link item
         navItems.forEach(item => {
             item.addEventListener('click', () => {
                 navLinks.classList.remove('active');
@@ -74,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Elegant Scroll Reveal Observer ---
     const revealElements = document.querySelectorAll('.reveal');
     
     if (revealElements.length > 0) {
@@ -82,14 +64,13 @@ document.addEventListener('DOMContentLoaded', () => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('active');
-                    // Stop watching once it transitions onto view to maximize performance
                     observer.unobserve(entry.target);
                 }
             });
         }, {
             root: null,
-            threshold: 0.15,
-            rootMargin: "0px 0px -50px 0px"
+            threshold: 0.01,
+            rootMargin: "0px 0px -10px 0px"
         });
 
         revealElements.forEach(el => revealObserver.observe(el));
