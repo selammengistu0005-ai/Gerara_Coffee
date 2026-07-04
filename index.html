@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerara Coffee | Premium Coffee House in Adama</title>
+    
+    <!-- Premium Icons & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient Background Elements -->
+    <i class="fa-solid fa-seedling ambient-bean bean-1"></i>
+    <i class="fa-solid fa-mug-hot ambient-bean bean-2"></i>
+    <i class="fa-solid fa-leaf ambient-bean bean-3"></i>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Gerara Coffee</a>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">Story</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#visit" class="nav-link">Visit Us</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="container hero-grid">
+            <div class="hero-content reveal">
+                <h1>The Art of<br>Relaxation</h1>
+                <p>Refreshing iced coffees, artisanal cakes, and unforgettable moments in the heart of Adama. Step into a world of elegance and joy.</p>
+                <div class="hero-actions">
+                    <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                    <a href="#visit" class="btn btn-outline">Visit Our Café</a>
+                </div>
+            </div>
+            <div class="emblem-wrapper reveal" style="transition-delay: 0.2s;">
+                <div class="emblem">
+                    <span>Gerara</span>
+                    <small>Premium Coffee House</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container about-grid">
+            <div class="about-image reveal">
+                <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&q=80&w=800" alt="Barista preparing artisan coffee">
+            </div>
+            <div class="about-content reveal" style="transition-delay: 0.2s;">
+                <h4 style="text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-primary); margin-bottom: 1rem;">Our Philosophy</h4>
+                <h2>Crafted with Care in Adama</h2>
+                <p>Gerara Coffee is more than just a café; it is a sanctuary designed for those who appreciate the finer things. Inspired by the serenity of nature and the joy found in a perfect cup, we source only the highest quality Ethiopian beans.</p>
+                <p>Whether you seek a quiet corner to work, a refreshing iced latte to beat the heat, or a decadent slice of cake to share, our doors are open.</p>
+                
+                <div class="feature-list">
+                    <div class="feature-item"><i class="fa-solid fa-check"></i> Master Artisan Roasts</div>
+                    <div class="feature-item"><i class="fa-solid fa-check"></i> Fresh Daily Pastries</div>
+                    <div class="feature-item"><i class="fa-solid fa-check"></i> Luxury Atmosphere</div>
+                    <div class="feature-item"><i class="fa-solid fa-check"></i> Impeccable Service</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Iced Coffee -->
+    <section class="section bg-beige" id="iced-coffee">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2>Signature Iced Coffees</h2>
+                <p>Expertly chilled, perfectly balanced, and tailored for absolute refreshment.</p>
+            </div>
+            <div class="product-grid">
+                <!-- Card 1 -->
+                <div class="product-card reveal">
+                    <div class="product-img"><img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&q=80&w=600" alt="Classic Iced Coffee"></div>
+                    <div class="product-info">
+                        <h3>Classic Iced Pour</h3>
+                        <p>Our custom house blend poured beautifully over crystal clear ice. Bold and clean.</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="product-card reveal" style="transition-delay: 0.1s;">
+                    <div class="product-img"><img src="https://images.unsplash.com/photo-1461023058043-07fc21e0d335?auto=format&fit=crop&q=80&w=600" alt="Iced Latte"></div>
+                    <div class="product-info">
+                        <h3>Velvet Iced Latte</h3>
+                        <p>Smooth espresso combined with cold organic milk, creating elegant visual layers.</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="product-card reveal" style="transition-delay: 0.2s;">
+                    <div class="product-img"><img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?auto=format&fit=crop&q=80&w=600" alt="Cold Brew Coffee"></div>
+                    <div class="product-info">
+                        <h3>20-Hour Cold Brew</h3>
+                        <p>Slow steeped to extract optimal natural sweetness and minimal acidity. Pure luxury.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Menu Section (Tabs) -->
+    <section class="section" id="menu">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2>The Gerara Collection</h2>
+                <p>Browse our curated selection of hot beverages, cold refreshments, and artisanal desserts.</p>
+            </div>
+
+            <div class="menu-controls reveal">
+                <button class="tab-btn active" onclick="switchMenu('tab-coffee')">Espresso & Hot Coffee</button>
+                <button class="tab-btn" onclick="switchMenu('tab-desserts')">Cakes & Desserts</button>
+                <button class="tab-btn" onclick="switchMenu('tab-alternatives')">Teas & Smoothies</button>
+            </div>
+
+            <!-- Hot Coffee Menu -->
+            <div id="tab-coffee" class="menu-content active">
+                <div class="menu-list">
+                    <div class="menu-item reveal">
+                        <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&q=80&w=200" alt="Espresso">
+                        <div class="menu-item-text"><h4>Single Origin Espresso</h4><p>Intense, full-bodied extraction with thick golden crema.</p></div>
+                    </div>
+                    <div class="menu-item reveal">
+                        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&q=80&w=200" alt="Latte">
+                        <div class="menu-item-text"><h4>Artisan Caffè Latte</h4><p>Silky micro-foam poured over a rich double shot.</p></div>
+                    </div>
+                    <div class="menu-item reveal">
+                        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&q=80&w=200" alt="Pour Over">
+                        <div class="menu-item-text"><h4>V60 Pour Over</h4><p>Meticulously filtered to highlight floral and fruity notes.</p></div>
+                    </div>
+                    <div class="menu-item reveal">
+                        <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&q=80&w=200" alt="Macchiato">
+                        <div class="menu-item-text"><h4>Classic Macchiato</h4><p>Robust espresso marked delicately with steamed milk.</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts Menu -->
+            <div id="tab-desserts" class="menu-content">
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&q=80&w=200" alt="Chocolate Cake">
+                        <div class="menu-item-text"><h4>Dark Chocolate Truffle</h4><p>Rich, multi-layered fudge cake for intense cocoa satisfaction.</p></div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&q=80&w=200" alt="Cheesecake">
+                        <div class="menu-item-text"><h4>Vanilla Bean Cheesecake</h4><p>Creamy New York style filling over a buttery biscuit base.</p></div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1616541823729-00fe0aacd32c?auto=format&fit=crop&q=80&w=200" alt="Red Velvet">
+                        <div class="menu-item-text"><h4>Signature Red Velvet</h4><p>Striking crimson sponge with light cream cheese frosting.</p></div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&q=80&w=200" alt="Tiramisu">
+                        <div class="menu-item-text"><h4>Classic Tiramisu</h4><p>Espresso-soaked ladyfingers nested in light mascarpone.</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alternatives Menu -->
+            <div id="tab-alternatives" class="menu-content">
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&q=80&w=200" alt="Spiced Tea">
+                        <div class="menu-item-text"><h4>Spiced Ethiopian Tea</h4><p>Fragrant black tea steeped with cinnamon and cloves.</p></div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1628543108332-9c9869a844b1?auto=format&fit=crop&q=80&w=200" alt="Mango Juice">
+                        <div class="menu-item-text"><h4>Fresh Pressed Mango</h4><p>100% pure organic ripe local mango extraction.</p></div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1502741224143-9038517fe1b9?auto=format&fit=crop&q=80&w=200" alt="Smoothie">
+                        <div class="menu-item-text"><h4>Tropical Paradise</h4><p>Mango, pineapple, and passionfruit blended smoothly.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section bg-beige" id="gallery">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2>The Gerara Experience</h2>
+                <p>Glimpse inside our calm oasis and discover the beauty of our coffee craft.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&q=80&w=600" alt="Cozy Interior">
+                    <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" style="transition-delay: 0.1s;" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=600" alt="Coffee and Pastry spread">
+                    <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" style="transition-delay: 0.2s;" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&fit=crop&q=80&w=600" alt="Latte Art">
+                    <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </div>
+                <div class="gallery-item reveal" style="transition-delay: 0.3s;" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?auto=format&fit=crop&q=80&w=600" alt="Coffee Pouring">
+                    <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+        <i class="fa-solid fa-xmark lightbox-close" onclick="closeLightbox(event, true)"></i>
+        <img id="lightbox-img" src="" alt="Enlarged view">
+    </div>
+
+    <!-- Visit & Contact Section -->
+    <section class="section" id="visit">
+        <div class="container contact-container reveal">
+            <div class="section-header text-center">
+                <h2>Join Us In Person</h2>
+                <p>Escape the hustle. We look forward to welcoming you to our peaceful environment in Adama.</p>
+            </div>
+            
+            <div class="info-card">
+                <div class="info-row">
+                    <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="info-text">
+                        <h4>Our Location</h4>
+                        <p>Bole Road Area, Near Central Square<br>Adama, Ethiopia</p>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
+                    <div class="info-text">
+                        <h4>Opening Hours</h4>
+                        <p>Monday – Sunday<br>7:00 AM – 10:00 PM</p>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="info-text">
+                        <h4>Contact Us</h4>
+                        <p>+251 22 111 2233<br>hello@geraracoffee.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            
+            <div class="footer-brand">
+                <h2>Gerara Coffee</h2>
+                <p>A premium coffee house dedicated to the art of relaxation, serving refreshing iced beverages and artisanal pastries in Adama, Ethiopia.</p>
+            </div>
+            
+            <div>
+                <h3 class="footer-heading">Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home Base</a></li>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#menu">House Menu</a></li>
+                    <li><a href="#gallery">Visual Gallery</a></li>
+                    <li><a href="#visit">Contact & Location</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-blog">
+                <h3 class="footer-heading">Café Blog & Socials</h3>
+                <p>Follow our digital journal for barista tips, weekly specials, and a behind-the-scenes look at our coffee craft.</p>
+                <div class="social-icons">
+                    <a href="javascript:void(0)" class="social-icon" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="javascript:void(0)" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="javascript:void(0)" class="social-icon" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Gerara Coffee. All rights reserved.</p>
+            <p>Designed for Relaxation.</p>
+        </div>
+    </footer>
+
+    <!-- External JS link -->
+    <script src="script.js"></script>
+</body>
+</html>
